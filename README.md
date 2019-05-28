@@ -9,4 +9,4 @@ Stable version: **v0.1a1**
 This branches version: **v0.1a2**
 
 ## Summary
-A python facing API for stats.nba.com (Still in heavy development)
+A python facing API for stats.nba.com
