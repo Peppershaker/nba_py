@@ -2,6 +2,9 @@
 data_dumps/
 official_nba_stats_files/
 
+# OSX
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
