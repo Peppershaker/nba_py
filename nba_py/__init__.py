@@ -22,13 +22,20 @@ except ImportError:
 # Constants
 TODAY = datetime.today()
 BASE_URL = 'http://stats.nba.com/stats/{endpoint}'
+
 HEADERS = {
-    'user-agent': ('Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'),  # noqa: E501
-    'Dnt': ('1'),
-    'Accept-Encoding': ('gzip, deflate, sdch'),
-    'Accept-Language': ('en'),
-    'origin': ('http://stats.nba.com')
-    }
+    'Host': ('stats.nba.com'),
+    'User-Agent': ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:67.0) Gecko/20100101 Firefox/67.0'),
+    'Accept': ('application/json, text/plain, */*'),
+    'Accept-Language': '(en-US,en;q=0.5)',
+    'Accept-Encoding': ('gzip, deflate, br'),
+    'x-nba-stats-origin': ('stats'),
+    'x-nba-stats-token': ('true'),
+    'DNT': ('1'),
+    'Cache-Control': ('max-age=0 ')   
+}
+
+
 
 
 def _api_scrape(json_inp, ndx):
